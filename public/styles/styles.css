@@ -1,0 +1,49 @@
+nav {
+	background-color: #0A162F;
+	box-shadow:  0 2px 5px 0 rgba(143,107,53,0.16),0 2px 10px 0 rgba(70, 0, 0, 0.12);
+	margin-bottom: 20px;
+}
+
+nav .brand-logo i {
+	margin-left: 25px;
+}
+
+body {
+	background-color: #22335A;
+	color: #fff;
+}
+
+.rc-border {
+	background-color:  #8F6B35;
+}
+
+.margin-container {
+	margin-bottom: 20px;
+}
+
+.underline {
+ 	border-bottom: 2px solid #233659;
+}
+
+input {
+	color: #fff;
+}
+input[type=text], input[type=password], input[type=email] {
+	border-bottom: 2px solid #233659;
+}
+
+::-webkit-input-placeholder {
+   color: red;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: red;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: red;
+}
+
+:-ms-input-placeholder {
+   color: red;
+}

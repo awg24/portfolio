@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Allen Garcia - Web Developer</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+<body>
+	<nav>
+		<div class="nav-wrapper">
+			<a href="#intro" class="brand-logo"><i class="material-icons">cloud</i></a>
+			<a href="#intro" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="#about">About</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			<ul class="side-nav" id="mobile-demo">
+				<li><a href="#about">About</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+	<main id="intro" class="container">
+		<div class="row">
+			<div class="col s12 m12 l12">
+				<h1 class="center-align">Hey there, I'm Allen</h1>
+				<h6 class="center-align"><i>"There's not a shred of evidence in favor of the idea that life is serious."</i></h6>
+			</div>
+		</div>
+	</main>
+	<section id="about" class="rc-border z-depth-3 margin-container">
+		<div class="section container row">
+			<div class="col s12">
+			<p>
+				<h5 class="underline" >About me</h5>
+				<p>
+					I went through a 3-month full-time coding bootcamp called The Iron Yard back in May 2015 where I learned primarily front-end development. Since then, I've picked up a few remote jobs/contracts where I really developed and honed my skill as a developer.
+				</p>
+				<p>
+					I like building out tools that users may need. The admin interface was especially fun for me to work on. I also found that I get a real kick out of making APIs. For whatever reason, I have a lot of fun using Postman to hit endpoints I've made and seeing the response pop up (or a 500 error that I have to debug).
+				</p>
+			</p>
+			</div>
+		</div>
+	</section>
+	<div class="row">
+		<h6 class="center-align">
+			<i>"It is better, I think, to reach for the stars than to sit flustered because you know you cannot reach them."</i>
+		</h6>
+	</div>
+	<section id="projects" class="rc-border z-depth-3 margin-container">
+		<div class="section container row">
+			<div class="col s12">
+				<h5 class="underline">Things I've built</h5>
+				<p>
+					A cms tool for an IoT device. I'm still under an NDA so I can't go into too much detail about it. However, I can say it used Angular on the front-end and used Parse for an easy backend.
+				</p>
+				<p>
+					An Admin interface for another IoT device (still NDA'd). It was a SailsJs project which used Angular for the front-end. With this project, I transitioned more into a full-stack role as I had to create/debug some sails routes. Waterline was used for the ORM. Deployed to AWS, gained experience using s3 and the aws-sdk for NodeJS.
+				</p>
+				<p>
+					Helped build out an interactive game for students for the upcoming election. Details about the game can be found here:
+					<a href="https://www.fanschool.org/election-challenge">https://www.fanschool.org/election-challenge</a>
+					This project used React + Redux on the front-end, which I built out, inside a Rails environment.
+				</p>
+				<p>
+					For each of these projects, I was working remote and corresponded daily with my PMs to figure out what more needed to be done and improvements that needed to be made.
+				</p>
+			</div>
+		</div>
+	</section>
+	<section id="contact" class="rc-border z-depth-3 margin-container">
+		<div class="section container row">
+			<div class="col s12">
+				<h5 class="underline">Want to talk? Send me a tweet, or an email!</h5>
+				<div class="row">
+					<form class="col s12">
+					<div class="row">
+						<div class="input-field col s6">
+							<input id="first_name" type="text" class="validate">
+						 	<label for="first_name">First Name</label>
+						</div>
+						<div class="input-field col s6">
+							<input id="last_name" type="text" class="validate">
+							<label for="last_name">Last Name</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<input id="password" type="password" class="validate">
+							<label for="password">Password</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<input id="email" type="email" class="validate">
+							<label for="email">Email</label>
+						</div>
+					</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+	<script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>
