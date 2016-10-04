@@ -1,6 +1,5 @@
 nav {
 	background-color: #0A162F;
-	box-shadow:  0 2px 5px 0 rgba(143,107,53,0.16),0 2px 10px 0 rgba(70, 0, 0, 0.12);
 	margin-bottom: 20px;
 }
 
@@ -21,6 +20,20 @@ body {
 	margin-bottom: 20px;
 }
 
+.small-container {
+	padding-right: 45px;
+	padding-left: 45px;
+}
+
+.small-img {
+	height: 50px;
+	width: 50px;
+}
+.medium-img {
+	height: 50px;
+	width: 50px;
+}
+
 .underline {
  	border-bottom: 2px solid #233659;
 }
@@ -28,8 +41,19 @@ body {
 input {
 	color: #fff;
 }
+
 input[type=text], input[type=password], input[type=email] {
 	border-bottom: 2px solid #233659;
+}
+input[type="email"]::-webkit-input-placeholder {
+  color: orange;
+}
+input[type=text]:focus:not([readonly])+label, input[type=email]:focus:not([readonly])+label, input[type=password]:focus:not([readonly])+label {
+	color: #22335A;
+}
+input[type=text]:focus:not([readonly]){
+	border-bottom: 1px solid #22335A;
+	box-shadow: 0 1px 0 0 #22335A;
 }
 
 ::-webkit-input-placeholder {
