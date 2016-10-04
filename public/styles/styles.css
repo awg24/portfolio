@@ -42,32 +42,34 @@ input {
 	color: #fff;
 }
 
-input[type=text], input[type=password], input[type=email] {
-	border-bottom: 2px solid #233659;
-}
-input[type="email"]::-webkit-input-placeholder {
-  color: orange;
-}
-input[type=text]:focus:not([readonly])+label, input[type=email]:focus:not([readonly])+label, input[type=password]:focus:not([readonly])+label {
-	color: #22335A;
-}
-input[type=text]:focus:not([readonly]){
-	border-bottom: 1px solid #22335A;
-	box-shadow: 0 1px 0 0 #22335A;
+input[type=text], input[type=password], input[type=email], textarea.materialize-textarea {
+	border-bottom: 2px solid #fff;
 }
 
-::-webkit-input-placeholder {
-   color: red;
+input[type=text]:focus:not([readonly])+label, input[type=email]:focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label {
+	color: #fff;
+}
+input[type=text]:focus:not([readonly]), input[type=email]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
+	border-bottom: 1px solid #fff;
+	box-shadow: 0 1px 0 0 #fff;
 }
 
-:-moz-placeholder { /* Firefox 18- */
-   color: red;
+.btn {
+	background-color: #22335A;
 }
 
-::-moz-placeholder {  /* Firefox 19+ */
-   color: red;
+.btn:hover {
+	background-color: #5d5d5d;
 }
 
-:-ms-input-placeholder {
-   color: red;
+.input-field label {
+	color: #fff;
+}
+
+.blue-box {
+	border: 2px solid #01579b;
+}
+
+.red-box {
+	border: 2px solid #e57373;
 }

@@ -26,6 +26,20 @@
 	<main id="intro" class="container">
 		<div class="row">
 			<div class="col s12 m12 l12">
+				<% if(messages.error) {%>
+					<div class="col s4"></div>
+					<div id="error-message" class="red-box red center-align lighten-1">
+						<span>There was an error processing the email. Try again later.</span>
+					</div>
+					<div class="col s4"></div>
+				<%}%>
+				<% if(messages.success) {%>
+					<div class="col s4"></div>
+					<div id="success-message" class="col s4 blue-box blue center-align lighten-1">
+						<span>Message Sent</span>
+					</div>
+					<div class="col s4"></div>
+				<%}%>
 				<h1 class="center-align">Hey there, I'm Allen</h1>
 					<div class="center-align">
 						<a href="https://twitter.com/allenwg"><img class="small-img responsive-img" src="images/twitter-logo.png"></a>
@@ -49,7 +63,7 @@
 			</div>
 		</div>
 	</section>
-	<div class="row">
+	<div class="container row">
 		<h6 class="center-align">
 			<i>"It is better, I think, to reach for the stars than to sit flustered because you know you cannot reach them."</i>
 		</h6>
@@ -77,37 +91,38 @@
 			</div>
 		</div>
 	</section>
-	<div class="row">
+	<div class="container row">
 		<h6 class="center-align"><i>"There's not a shred of evidence in favor of the idea that life is serious."</i></h6>
 	</div>
 	<section id="contact" class="rc-border z-depth-3 container margin-container">
 		<div class="section small-container row">
 			<div class="col s12">
-				<h5 >Want to talk? Send me a tweet, or an email!</h5>
+				<h5 >Want to talk? Send me an email.</h5>
 				<div class="row">
-					<form class="col s12">
+					<form action="/send/email" method="POST" class="col s12">
 						<div class="row">
-							<div class="input-field col s6">
-								<input id="first_name" type="text" class="validate">
-							 	<label for="first_name">First Name</label>
+							<div class="input-field col s12 l6">
+								<input id="first_name" name="firstName" type="text" required>
+								<label for="first_name">First Name</label>
 							</div>
-							<div class="input-field col s6">
-								<input id="last_name" type="text" class="validate">
+							<div class="input-field col s12 l6">
+								<input id="last_name" name="lastName" required type="text">
 								<label for="last_name">Last Name</label>
 							</div>
 						</div>
 						<div class="row">
 							<div class="input-field col s12">
-								<input id="password" type="password" class="validate">
-								<label for="password">Password</label>
+								<input id="email" name="email" required type="email">
+								<label for="email">Your Email</label>
 							</div>
 						</div>
 						<div class="row">
 							<div class="input-field col s12">
-								<input id="email" type="email" class="validate">
-								<label for="email">Email</label>
+								<textarea id="textarea1" name="message" required class="materialize-textarea"></textarea>
+								<label for="textarea1">Write me... </label>
 							</div>
 						</div>
+						<button type="submit" class="waves-effect waves-light btn"><i class="material-icons left">send</i>Submit</button>
 					</form>
 				</div>
 			</div>
