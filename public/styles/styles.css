@@ -1,11 +1,87 @@
-nav {
-	background-color: #0A162F;
-	margin-bottom: 20px;
+
+* {
+	box-sizing: border-box;
 }
 
-nav .brand-logo i {
-	margin-left: 25px;
+.landing {
+  position: relative;
+  background-color: #0A162F;
+  height: 102vh;
+  margin-bottom: 25px;
+  border-bottom: 10px solid #5d5d5d;
+  padding-left: 30px;
 }
+.overlay {
+   top: 0;
+   left: 50vw;
+   position: absolute;
+   height: 100.6vh;
+   width: 50vw;
+   background-color: #000;
+   opacity: 0.5;
+   padding: 15px;
+}
+
+.bottom-justified {
+  position: absolute;
+  bottom: 10vh;
+  left: 3vw;
+  font-size: 4vw;
+}
+
+.top-justified {
+  position: absolute;
+  top: 0;
+  font-size: 3vw;
+}
+.font-small {
+	font-size: 1vw;
+}
+
+@media( max-width: 1150px){
+	.overlay {
+		width: 100vw;
+		height: 48.6vh;
+		left:0;
+		top: 52vh;
+	}
+
+	.bottom-justified {
+	  top: 0;
+	  padding: 15px;
+
+	}
+}
+
+@media( max-width: 1149px){
+
+	.font-small {
+		font-size:2vh;
+	}
+}
+
+@media( max-width: 690px){
+
+	.font-small {
+		font-size: 2vh;
+	}
+}
+
+@media( max-width: 570px){
+	.font-small {
+		font-size: 2vh;
+	}
+	.top-justified {
+	  font-size: 6vw;
+	}
+}
+@media( max-width: 569px){
+	.font-small {
+		font-size: 1.7vh;
+	}
+}
+
+
 
 body {
 	background-color: #22335A;

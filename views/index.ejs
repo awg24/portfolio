@@ -10,62 +10,27 @@
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 <body>
-	<nav>
-		<div class="nav-wrapper">
-			<a href="#intro" class="brand-logo"><i class="material-icons">cloud</i></a>
-			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-			<ul class="right hide-on-med-and-down">
-				<li><a href="#about">About</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-			<ul class="side-nav" id="mobile-demo">
-				<li><a href="#about">About</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</div>
-	</nav>
-	<main id="intro" class="container">
-		<div class="row">
-			<div class="col s12 m12 l12">
-				<% if(messages.error) {%>
-					<div class="col s4"></div>
-					<div id="error-message" class="red-box red center-align lighten-1">
-						<span>There was an error processing the email. Try again later.</span>
-					</div>
-					<div class="col s4"></div>
-				<%}%>
-				<% if(messages.success) {%>
-					<div class="col s4"></div>
-					<div id="success-message" class="col s4 blue-box blue center-align lighten-1">
-						<span>Message Sent</span>
-					</div>
-					<div class="col s4"></div>
-				<%}%>
-				<h1 class="center-align">Hey there, I'm Allen</h1>
-					<div class="center-align">
-						<a href="https://twitter.com/allenwg"><img class="small-img responsive-img" src="images/twitter-logo.png"></a>
-						<a href="https://github.com/awg24"><img class="small-img responsive-img" src="images/github-logo.png"></a>
-					</div>
-			</div>
-		</div>
-	</main>
-	<section id="about" class="rc-border z-depth-3 container margin-container">
-		<div class="section row">
-			<div class="col s12">
-				<div class="small-container">
-					<h5 class="underline" >About me</h5>
-					<p>
-						I went through a 3-month full-time coding bootcamp called The Iron Yard back in May 2015 where I learned primarily front-end development. Since then, I've picked up a few remote jobs/contracts where I really honed my skills as a developer.
-					</p>
-					<p>
-						Through the course of my most recent job, I found that I get a real kick out of making APIs. For whatever reason, I have a lot of fun using Postman to hit endpoints I've made and seeing the response pop up (or a 500 error that I have to debug). Aside from APIs, I really like building out new tools, or features, for clients. There's just something that's extremely gratifying about turning a thought, or in most cases a need, and making it into a reality.
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
+	<div class="landing">
+	  <section class="top-justified">
+	    <p>
+	    	Allen Garcia
+	    	</br>
+	    	Web Developer
+	    </p>
+	  </section>
+	</div>
+	<div class="overlay">
+		<main class="bottom-justified font-small">
+			<h5 class="underline">About me</h5>
+			<p>
+				I went through a 3-month full-time coding bootcamp called The Iron Yard back in May 2015 where I learned primarily front-end development. Since then, I've picked up a few remote jobs/contracts where I really honed my skills as a developer.
+			</p>
+			<p>
+				Through the course of my most recent job, I found that I get a real kick out of making APIs. For whatever reason, I have a lot of fun using Postman to hit endpoints I've made and seeing the response pop up (or a 500 error that I have to debug). Aside from APIs, I really like building out new tools, or features, for clients. There's just something that's extremely gratifying about turning a thought, or in most cases a need, and making it into a reality.
+			</p>
+			Click <a class="" href="#projects">here</a> to see what I've done.
+		</main>
+	</div>
 	<div class="container row">
 		<h6 class="center-align">
 			<i>"It is better, I think, to reach for the stars than to sit flustered because you know you cannot reach them."</i>
@@ -77,7 +42,7 @@
 				<div class="small-container">
 				<h5 class="underline">Things I've built</h5>
 				<p>
-					A cms tool for an IoT device. I'm still under an NDA so I can't go into too much detail about it. However, I can say it used Angular on the front-end and used Parse for an easy backend.
+					A cms tool for an Internet of Things (IoT) device. I'm still under an NDA so I can't go into too much detail about it. However, I can say it used Angular on the front-end and used Parse for an easy backend.
 				</p>
 				<p>
 					An Admin interface for another IoT device (still NDA'd). It was a SailsJs project which used Angular for the front-end. With this project, I transitioned more into a full-stack role as I had to create/debug some sails routes. Waterline was used for the ORM. Deployed to AWS, gained experience using s3 and the aws-sdk for NodeJS.
