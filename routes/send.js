@@ -11,14 +11,9 @@ router.post("/email", function(req, res) {
 	};
 
 	mailgun.messages().send(data, function (error, body) {
-		if(error) {
-			req.flash("error", true);
-			req.flash("success", false);
-		} else {
-			req.flash("success", true);
-			req.flash("error", false);
-		}
-		res.redirect("/");
+		if(error) return res.status(400).json({message: false});
+
+		res.status(200).json({message: true});
 	});
 });
 

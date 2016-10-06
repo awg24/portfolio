@@ -23,13 +23,12 @@ app.use(sessions({
 	saveUninitialized: true
 }));
 app.use(flash());
-app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use("/send", send);
 
 app.get("/", function(req, res){
-	res.render("index", res.locals.messages);
+	res.sendFile(path.join(__dirname, "index.html"));
 });
 
 app.get("*", function(req, res){
